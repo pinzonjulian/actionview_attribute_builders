@@ -55,16 +55,11 @@ class ExampleFormBuilder < ActionView::Helpers::FormBuilder
     attribute_builder = text_field_attribute_builder(method, options)
     # 2. Use the `html_attributes` method to retrieve the computed attributes. Commonly, `id`, `name`, `value` etc.
     html_attributes = attribute_builder.html_attributes
-    # 3. Use the attributes to create the markup.
-    # using `merge!` will pass on any remaining options the builder didn't use.
-   
   end
 end
 ```
 
-**4. Use the appropriate `<helper>_attribute_builder` method for the type of field you're creating**
-
-In this case `text_field_attribute_builder`
+**4. Render the HTML form element**
 
 ```ruby
 # app/form_builders/example_form_builder.rb
@@ -83,7 +78,7 @@ class ExampleFormBuilder < ActionView::Helpers::FormBuilder
 end
 ```
 
-**4. Use the new form builder in a template**
+**5. Use the new form builder in a template**
 
 ```erb
 <%= form_with model: @user, builder: ExampleFormBuilder do |form| %>
@@ -91,7 +86,7 @@ end
 <% end %>
 ```
 
-**5. Check the output in your browser's inspector to verify the new markup**
+**6. Check the output in your browser's inspector to verify the new markup**
 
 Note how, just like in a plain Rails application, the field includes the conventional `name`, `type` and `id` attributes based on the model used.
 
@@ -102,7 +97,7 @@ Note how, just like in a plain Rails application, the field includes the convent
 
 ```
 
-**5. Do this for \*every form helper**
+**6. Do this for \*every form helper**
 
 `number_field`, `password_field`, `checkbox` etc. 
 
