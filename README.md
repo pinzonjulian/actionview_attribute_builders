@@ -55,6 +55,7 @@ class ExampleFormBuilder < ActionView::Helpers::FormBuilder
     attribute_builder = text_field_attribute_builder(method, options)
     # 2. Use the `html_attributes` method to retrieve the computed attributes. Commonly, `id`, `name`, `value` etc.
     html_attributes = attribute_builder.html_attributes
+    # => { id: "user_name", name: "user[name]", value: "Julian" }
   end
 end
 ```
