@@ -1,6 +1,9 @@
 # Actionview::AttributeBuilders
 > 🧪 ☣️ This gem is an experiment. Please do not use it for anything other than to explore the new concepts it brings into Rails.
 
+**New!**
+
+Visit the AttributeBuilders playground https://attributebuilders.julianpinzon.com to see all of this in action!
 
 ## 🧑🏽‍💻 Installation
 
@@ -133,7 +136,7 @@ I have written extensively about this problem. If you're interested, please read
 ## Contributing
 The best way to contribute to this gem in its current state is:
 1. to experiment with it and build custom `FormBuilder` classes.
-2. 
+2. start a discussion or issue on this repo
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
