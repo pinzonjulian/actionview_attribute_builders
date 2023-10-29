@@ -108,6 +108,12 @@ Note how, just like in a plain Rails application, the field includes the convent
 <small>* _every helper that's currently supported. Not all of them are done_<small>
 
 ## 🏞️ Concrete examples
+
+### Playground
+Visit the Attribute Builders playground https://attributebuilders.julianpinzon.com for an interactive preview of this gem in action.
+
+### Implementation guides
+
 > 👀 Images inside!
 
 Visit the [examples](/examples) folder and follow the guides on how to use this with real components using Shoelace and Material Design Web Components.
