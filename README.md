@@ -164,6 +164,8 @@ This library is **not finished**. There are several things missing. For example:
 | url_field                 | ✅          |
 | week_field                | ✅          |
 | weekday_select            | ◻️         |
+| submit                    | ◻️         |
+| button                    | ◻️         |
 
 ## 💎 What problem is this solving?
 The short version is that Rails has a lot of conventions for form fields to work seamlessly with `ActiveModel` and `ActiveRecord`. However, these are not exposed to developers; they are deeply nested and coupled to the rendering of the actual markup. This makes creating new `FormBuilders` notoriously hard or even impossible in some cases. This forces developers to abandon Rails' conventions which is not desirable.
