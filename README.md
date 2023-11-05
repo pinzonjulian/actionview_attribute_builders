@@ -125,10 +125,45 @@ This library exposes helpers that use _the exact same mechanics to create form i
 Check out the [lib/actionview_attribute_builders/attribute_builders_helper](AttributeBuildersHelper) for a list of all currently supported builders.
 
 ## ☢️ Status
+
 This library is **not finished**. There are several things missing. For example:
 1. Not all attribute builders have been extracted from Rails. There are currently 4 missing input fields and some extra missing helpers (like buttons and input submit fields)
 2. Some helpers are far more complex than others and probably can't be used yet in a real scenario. For example, `<select>` tags (and similar elements) are harder because they are composed of not one but multiple html elements (`<select>` and `<option>`). This problem is yet to be solved.
 3. The way the gem is loaded is a bit hacky and has a lot of garbage comments.
+
+### ⚙️ AttributeBuilders list
+| Attributer Builder        | Available? |
+|---------------------------|------------|
+| check_box                 | ✅          |
+| collection_check_boxes    | ◻️         |
+| collection_radio_buttons  | ◻️         |
+| collection_select         | ◻️         |
+| color_field               | ✅          |
+| date_field                | ✅          |
+| date_select               | ◻️         |
+| datetime_field            | ✅          |
+| datetime_select           | ◻️         |
+| email_field               | ✅          |
+| file_field                | ✅          |
+| grouped_collection_select | ◻️         |
+| hidden_field              | ✅          |
+| label                     | ✅          |
+| month_field               | ✅          |
+| number_field              | ✅          |
+| password_field            | ✅          |
+| radio_button              | ✅          |
+| range_field               | ✅          |
+| search_field              | ✅          |
+| select                    | ✅          |
+| tel_field                 | ✅          |
+| text_area                 | ✅          |
+| text_field                | ✅          |
+| time_field                | ✅          |
+| time_select               | ◻️         |
+| time_zone_select          | ◻️         |
+| url_field                 | ✅          |
+| week_field                | ✅          |
+| weekday_select            | ◻️         |
 
 ## 💎 What problem is this solving?
 The short version is that Rails has a lot of conventions for form fields to work seamlessly with `ActiveModel` and `ActiveRecord`. However, these are not exposed to developers; they are deeply nested and coupled to the rendering of the actual markup. This makes creating new `FormBuilders` notoriously hard or even impossible in some cases. This forces developers to abandon Rails' conventions which is not desirable.
