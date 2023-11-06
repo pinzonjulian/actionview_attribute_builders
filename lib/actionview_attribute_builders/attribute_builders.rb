@@ -26,36 +26,12 @@ require_relative "attribute_builders/range_field"
 require_relative "attribute_builders/url_field"
 require_relative "attribute_builders/week_field"
 
+require_relative "attribute_builders/button"
+require_relative "attribute_builders/submit"
+
 module ActionView
   module Helpers # :nodoc:
     module AttributeBuilders # :nodoc:
-      # extend ActiveSupport::Autoload
-      #
-      # eager_autoload do
-      #   autoload :Base
-      #   autoload :CheckBox
-      #   autoload :ColorField
-      #   autoload :DateField
-      #   autoload :DatetimeField
-      #   autoload :DatetimeLocalField
-      #   autoload :EmailField
-      #   autoload :FileField
-      #   autoload :HiddenField
-      #   autoload :Label
-      #   autoload :MonthField
-      #   autoload :NumberField
-      #   autoload :RadioButton
-      #   autoload :SearchField
-      #   autoload :Select
-      #   autoload :TelField
-      #   autoload :TextArea
-      #   autoload :TextField
-      #   autoload :TimeField
-      #   autoload :PasswordField
-      #   autoload :RangeField
-      #   autoload :UrlField
-      #   autoload :WeekField
-      # end
     end
   end
 end
