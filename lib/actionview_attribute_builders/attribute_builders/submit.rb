@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require "action_view/helpers/attribute_builders/submittable"
+# require "action_view/helpers/attribute_builders/submittable"
 
 module ActionView
   module Helpers

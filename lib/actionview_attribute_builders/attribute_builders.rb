@@ -26,6 +26,7 @@ require_relative "attribute_builders/range_field"
 require_relative "attribute_builders/url_field"
 require_relative "attribute_builders/week_field"
 
+require_relative "attribute_builders/submittable"
 require_relative "attribute_builders/button"
 require_relative "attribute_builders/submit"
 
