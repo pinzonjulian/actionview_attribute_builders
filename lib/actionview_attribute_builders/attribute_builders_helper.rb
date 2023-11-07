@@ -116,7 +116,7 @@ module ActionviewAttributeBuilders
     end
 
     def button_attribute_builder(value, options)
-      ActionView::Helpers::AttributeBuilders::Button.new(value, options, object_name, @template)
+      ActionView::Helpers::AttributeBuilders::Button.new(value, options, @object, object_name, @template)
     end
 
     def submit_attribute_builder(value, options)
